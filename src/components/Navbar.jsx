@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles, nameHome } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu, logo, logotext } from '../assets';
+import { close, menu, logo } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-    const nameHome = {
-        fontsize: '260px'
-    };
+    // const nameHome = {
+    //     fontsize: '260px'
+    // };
 
   return (
     <nav
