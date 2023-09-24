@@ -48,6 +48,8 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+import dine_sira from './projects/dine_sira.png';
+import budget from './projects/budget.png';
 
 export {
   bwmap,
@@ -94,4 +96,6 @@ export {
   dcc,
   kelhel,
   microverse,
+  dine_sira,
+  budget,
 };

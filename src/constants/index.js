@@ -19,14 +19,12 @@ import {
   graphql,
   komikult,
   leaderboard,
-  math,
-  movie,
   nyeusi,
-  space,
   coverhunt,
-  dcc,
   kelhel,
   microverse,
+  dine_sira,
+  budget,
 } from '../assets';
 
 export const navLinks = [
@@ -194,8 +192,8 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Space Station',
-    description: 'This is a single-page space info app built with React redux where I was collaborator',
+    name: 'Budget',
+    description: 'This is a web app that allow user to manage their budget and make plan for better use of i',
     tags: [
       {
         name: 'nextjs',
@@ -210,35 +208,35 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/mahabubx7/space-travellers-hub',
-    demo: 'https://space-traveller-hub.netlify.app/',
+    image: budget,
+    repo: 'https://github.com/touredri/my-budget',
+    demo: 'https://budget-zbvh.onrender.com/',
   },
   {
     id: 'project-4',
-    name: 'Movie Show',
-    description: `A single-page application that allows users to movie or show's ratings and its details.`,
+    name: 'Dine Sira',
+    description: `A mobile application that allow user to know prayer time for it local zone or a Masdjid and the itinerary to go there.`,
     tags: [
       {
-        name: 'nextjs',
+        name: 'Ionic',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Angular',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'TypeScript',
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-    repo: 'https://github.com/touredri/capston2',
-    demo: 'https://touredri.github.io/capston2/dist/',
+    image: dine_sira,
+    repo: 'https://github.com/touredri/app-mosque',
+    demo: 'https://docs.google.com/document/d/1wB1D6B2ZxsjOnQGynccAp4PC8P1VDRVIxtifHpoy44E/edit?usp=sharing',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'JS event',
     description:
       'This is a demo event website for a BootCamp to learn JavaScript .',
     tags: [

@@ -36,7 +36,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+        className="mt-4 text-taupe text-[18px] max-w-3xl font-bold leading-[30px]">
           Thank you for taking the time to explore my portfolio.
           I'm excited about the future of software development and
           the endless possibilities it offers. If you have any questions
