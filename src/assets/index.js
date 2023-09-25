@@ -52,6 +52,7 @@ import dine_sira from './projects/dine_sira.png';
 import budget from './projects/budget.png';
 import linkedin from './icons/linkdin.png';
 import twitter from './icons/twiter.png';
+import gits from './icons/gits.png'
 
 export {
   bwmap,
@@ -102,4 +103,5 @@ export {
   budget,
   twitter,
   linkedin,
+  gits,
 };

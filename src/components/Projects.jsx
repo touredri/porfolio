@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
+import { gits, pineapple, pineappleHover } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
@@ -57,7 +57,7 @@ const ProjectCard = ({
                   flex justify-center items-center cursor-pointer
                   sm:opacity-[0.9] opacity-[0.8]">
                 <img
-                  src={github}
+                  src={gits}
                   alt="source code"
                   className="w-4/5 h-4/5 object-contain"
                 />
