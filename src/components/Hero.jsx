@@ -50,7 +50,7 @@ const Hero = () => {
               I'm a software developer, project manager & designer.
             </p>
           </div>
-          <div className='absolute bottom-1 left-17 flex items-center p-2 gap-3 social mb-3 z-10'>
+          <div className='absolute bottom-1 left-17 flex items-center p-2 gap-3 social mt-3 z-10'>
               <a href="https://github.com/touredri" target="_blank" rel="noopener noreferrer"><img src={github} alt="social" className='w-10'/></a>
               <a href="https://www.linkedin.com/in/touredri" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="social" className='w-10'/></a>
               <a href="https://twitter.com/touredri" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="social" className='w-11'/></a>
