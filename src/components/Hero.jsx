@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { shaq, bwmap, worldmap, github, linkedin, twitter } from '../assets';
 
 const Hero = () => {
   return (
@@ -23,18 +23,18 @@ const Hero = () => {
       </div>
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden">
+        sm:bg-hero bg-hero-mobile overflow-hidden ">
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
+          className={`absolute inset-0 sm:top-[100px] top-[150px] 
+          lg:top-[100px] xl:top-[250px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}>
+          justify-between gap-3 heroTop`}>
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
 
-          <div>
+          <div className='heroTop'>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
                 Hi, I&rsquo;m{' '}
@@ -50,11 +50,14 @@ const Hero = () => {
               I'm a software developer, project manager & designer.
             </p>
           </div>
+          <div className='absolute bottom-1 left-17 flex items-center p-2 gap-3 social mb-3 z-10'>
+              <a href="https://github.com/touredri" target="_blank" rel="noopener noreferrer"><img src={github} alt="social" className='w-10'/></a>
+              <a href="https://www.linkedin.com/in/touredri" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="social" className='w-10'/></a>
+              <a href="https://twitter.com/touredri" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="social" className='w-11'/></a>
+            </div>
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"></div>
-
-          <div></div>
         </div>
 
         <div

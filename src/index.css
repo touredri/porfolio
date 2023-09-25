@@ -225,4 +225,18 @@
     font-size: 70px;
     text-align: center;
   }
+
+
+}
+
+@media (max-width: 625px) {
+  .social {
+    flex-direction: column;
+    left: 1%;
+    bottom: 1%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1021px) {
+  
 }
