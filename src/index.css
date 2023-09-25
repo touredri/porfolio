@@ -222,21 +222,15 @@
 
 @media (max-width: 638px) {
   .link-mobile {
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
   }
-
-
 }
 
 @media (max-width: 625px) {
   .social {
     flex-direction: column;
     left: 1%;
-    bottom: 1%;
+    bottom: 8%;
   }
-}
-
-@media screen and (min-width: 640px) and (max-width: 1021px) {
-  
 }

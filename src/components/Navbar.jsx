@@ -65,7 +65,7 @@ const Navbar = () => {
               </div>
               <ul
                 className="list-none flex flex-col -gap-[1rem] 
-                items-center justify-end mt-[10rem] -ml-[35px]">
+                items-center justify-end -ml-[5px]">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
