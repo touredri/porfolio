@@ -1,9 +1,9 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { useTranslation } from 'react-i18next';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -27,21 +27,18 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t('introduction')}</p>
+        <h2 className={styles.sectionHeadText}>{t('overview')}</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl font-bold leading-[30px]">
-          Thank you for taking the time to explore my portfolio.
-          I'm excited about the future of software development and
-          the endless possibilities it offers. If you have any questions
-          or potential collaborations, please feel free to reach out.
-          Let's build something incredible together!
+          { t('thankYouMessage')}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

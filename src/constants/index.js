@@ -42,25 +42,41 @@ export const navLinks = [
   },
 ];
 
+const translations = {
+  en: {
+    'Frontend Developer': 'Frontend Developer',
+    'Backend Developer': 'Backend Developer',
+    'UI/UX Design': 'UI/UX Design',
+    'Software Prototyping': 'Software Prototyping',
+  },
+  fr: {
+    'Frontend Developer': 'Développeur Frontend',
+    'Backend Developer': 'Développeur Backend',
+    'UI/UX Design': 'Design UI/UX',
+    'Software Prototyping': 'Prototypage de logiciels',
+  },
+};
+
+let currentLanguage = localStorage.getItem('language') || 'fr';
+
 const services = [
   {
-    title: 'Frontend Developer',
+    title: translations[currentLanguage]['Frontend Developer'],
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: translations[currentLanguage]['Backend Developer'],
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: translations[currentLanguage]['UI/UX Design'],
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: translations[currentLanguage]['Software Prototyping'],
     icon: prototyping,
   },
 ];
-
 const technologies = [
   {
     name: 'HTML 5',
@@ -133,14 +149,14 @@ const experiences = [
     company_name: 'Microverse',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Apr 2023 - Now',
+    date: 'Apr 2023 - Sep 2023',
   },
   {
     title: 'Junior Software Engineer',
     company_name: 'Freelancer',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2023 - Now',
+    date: 'May 2022 - Now',
   },
 ];
 
@@ -193,7 +209,8 @@ const projects = [
   {
     id: 'project-3',
     name: 'Budget',
-    description: 'This is a web app that allow user to manage their budget and make plan for better use of i',
+    description:
+      'This is a web app that allow user to manage their budget and make plan for better use of teir money.',
     tags: [
       {
         name: 'nextjs',

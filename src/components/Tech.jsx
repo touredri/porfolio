@@ -4,12 +4,14 @@ import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 import { styles } from '../styles';
 import { textVariant } from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 const Tech = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubTextLight}>My skills</p>
+        <p className={styles.sectionSubTextLight}>{t('skill')}</p>
         <h2 className={styles.sectionHeadText}>Technologies.</h2>
       </motion.div>
 

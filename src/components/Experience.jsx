@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -52,14 +53,15 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} sm:pl-16 pl-[2rem]`}>
-          What I've done so far
+          {t('work')}
         </p>
         <h2 className={`${styles.sectionHeadText} sm:pl-16 pl-[2rem]`}>
-          Work Experience.
+          {t('experience')}.
         </h2>
       </motion.div>
 
@@ -102,7 +104,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  'https://drive.google.com/file/d/1r9m6FTF3LKKbuwf4r918URDvWbMmJ0fu/view?usp=sharing', //paste the link to your resume here
+                  t('cv'), //paste the link to your resume here
                   '_blank'
                 )
               }
@@ -116,7 +118,7 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MY RESUME
+              {t('resume')}
               <img
                 src={download}
                 alt="download"

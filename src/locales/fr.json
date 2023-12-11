@@ -1,0 +1,172 @@
+{
+  "en": "Anglais",
+  "fr": "Français",
+  "greeting": "Salut, je suis",
+  "welcomeMessage": "Ravi de vous voir.",
+  "professionalDescription": "Je suis développeur de logiciels, chef de projet et designer.",
+  "introduction": "Introduction.",
+  "overview": "Aperçu.",
+  "thankYouMessage": "Merci d'avoir pris le temps d'explorer mon portfolio. Je suis enthousiaste à propos de l'avenir du développement logiciel et des possibilités infinies qu'il offre. Si vous avez des questions ou des collaborations potentielles, n'hésitez pas à me contacter. Construisons quelque chose d'incroyable ensemble!",
+  "projectIntro": "Ces projets démontrent mon expertise avec des exemples pratiques de certains de mes travaux, y compris de brèves descriptions et des liens vers des dépôts de code et des démonstrations en direct. Ils illustrent ma capacité à relever des défis complexes, à m'adapter à diverses technologies et à superviser efficacement des projets.",
+  "project": "Projets",
+  "services": [
+    {
+      "title": "Developpeur Frontend",
+      "icon": "frontend.png"
+    },
+    {
+      "title": "Developpeur Backend ",
+      "icon": "backend.png"
+    },
+    {
+      "title": "UI/UX Design",
+      "icon": "ux.png"
+    },
+    {
+      "title": "Prototypage de logiciels",
+      "icon": "prototyping.png"
+    }
+  ],
+  "navLinks": [
+    {
+      "id": "about",
+      "title": "À propos"
+    },
+    {
+      "id": "projects",
+      "title": "Projets"
+    },
+    {
+      "id": "contact",
+      "title": "Contact"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "name": "Faani",
+      "description": "Une application mobile de mise en relation client et couturier pour la confection de vêtements sur mesure",
+      "tags": [
+        {
+          "name": "Flutter",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Firebase",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Figma",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": "../assets/projects/faani.jpg",
+      "repo": "https://github.com/touredri/faani",
+      "demo": "https://docs.google.com/document/d/1-ltoo4sSCKtaCKnJKMcWkz2ejVg0nuKelNC1XKp5v6g/edit?usp=sharing"
+    },
+    {
+      "id": "project-2",
+      "name": "Dine Sira",
+      "description": "Une application mobile qui informe les utilisateurs sur les heures de prières dans leur région plus les mosquées les plus proches",
+      "tags": [
+        {
+          "name": "Ionic",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "Angular",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "scss",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": "../assets/projects/dine_sira.png",
+      "repo": "https://github.com/touredri/app-mosque",
+      "demo": "https://docs.google.com/document/d/1wB1D6B2ZxsjOnQGynccAp4PC8P1VDRVIxtifHpoy44E/edit?usp=sharing"
+    },
+    {
+      "id": "project-3",
+      "name": "Fuit Web App",
+      "description": "Une petite application web en vue mobile qui fournit des informations sur les valuers nutritionnelles des fruits",
+      "tags": [
+        {
+          "name": "react",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "restapi",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "scss",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": "../assets/projects/leaderboard.png",
+      "repo": "https://github.com/touredri/fruit",
+      "demo": "https://dev--superb-taiyaki-212be8.netlify.app/"
+    },
+    {
+      "id": "project-4",
+      "name": "Appli Budget",
+      "description": "Il s'agit d'une application web qui permet à l'utilisateur de gérer son budget et de faire des plans pour mieux utiliser son argent.",
+      "tags": [
+        {
+          "name": "Ruby on Rails",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "restapi",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Ruby",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": "../assets/projects/budget.png",
+      "repo": "https://github.com/touredri/my-budget",
+      "demo": "https://budget-zbvh.onrender.com/"
+    },
+    {
+      "id": "project-5",
+      "name": "Faani Dashboard",
+      "description": "Une application web pour l'administartion de l'application mobile Faani",
+      "tags": [
+        {
+          "name": "Ruby on Rails",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "restapi",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "Ruby",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": "../assets/projects/faani_dash.png",
+      "repo": "https://github.com/touredri/faani_dashboard_new",
+      "demo": "https://github.com/touredri/faani_dashboard_new"
+    }
+  ],
+  "work": "CE QUE J'AI FAIT JUSQU'ICI",
+  "experience": "Expérience professionnelle",
+  "resume": "Mon CV",
+  "cv": "https://drive.google.com/file/d/1r9m6FTF3LKKbuwf4r918URDvWbMmJ0fu/view?usp=sharing",
+  "skill": "Mes Compétences",
+  "tech": "Technologies",
+  "contact.email": "Quel est votre adress email?",
+  "contact.nom": "Quel est votre nom?",
+  "contact.message": "Votre message ici",
+  "contact.email.label": "Email",
+  "contact.nom.label": "Nom",
+  "contact.message.label": "Message",
+  "contact.send": "Envoyer",
+  "contact.send.success": "Je vous remercie. Je reviendrai vers vous dès que possible.",
+  "contact.send.error": "Une erreur s'est produite lors de l'envoi du message! essayer encore",
+  "contact": "Contacter moi"
+}

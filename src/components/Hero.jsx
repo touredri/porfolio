@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { styles } from '../styles';
-import { navLinks } from '../constants';
+// import { navLinks } from '../constants';
 import { shaq, bwmap, worldmap, github, linkedin, twitter } from '../assets';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
@@ -26,7 +29,7 @@ const Hero = () => {
         sm:bg-hero bg-hero-mobile overflow-hidden ">
         <div
           className={`absolute inset-0 sm:top-[100px] top-[150px] 
-          lg:top-[100px] xl:top-[250px] ${styles.paddingX} 
+          lg:top-[100px] xl:top-[100px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3 heroTop`}>
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
@@ -37,7 +40,7 @@ const Hero = () => {
           <div className='heroTop'>
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-                Hi, I&rsquo;m{' '}
+                { t('greeting') } {' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
@@ -46,8 +49,8 @@ const Hero = () => {
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Glad to see you. <br className="sm:block hidden" />
-              I'm a software developer, project manager & designer.
+              { t('welcomeMessage')} <br className="sm:block hidden" />
+              { t('professionalDescription')}
             </p>
           </div>
           <div className='absolute bottom-1 left-17 flex items-center p-2 gap-3 social mt-3 z-10'>

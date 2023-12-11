@@ -234,3 +234,8 @@
     bottom: 8%;
   }
 }
+
+.selected {
+  font-weight: bold;
+  text-decoration: underline;
+}
