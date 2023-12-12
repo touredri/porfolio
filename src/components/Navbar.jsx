@@ -21,11 +21,9 @@ const Navbar = () => {
     if (lng === 'fr') {
       document.getElementById('fr').classList.add('selected');
       document.getElementById('en').classList.remove('selected');
-      localStorage.setItem('language', 'fr');
     } else {
       document.getElementById('en').classList.add('selected');
       document.getElementById('fr').classList.remove('selected');
-      localStorage.setItem('language', 'en');
     }
   };
 
@@ -67,7 +65,7 @@ const Navbar = () => {
           <button
             onClick={() => changeLanguage('en')}
             disabled={currentLanguage === 'en'}
-            className=""
+            className="selected"
             id="en"
           >
             {t('en')}

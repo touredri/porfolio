@@ -4,6 +4,12 @@ import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { useTranslation } from 'react-i18next';
+import frontend from '../assets/icons/frontend.png';
+import backend from '../assets/icons/backend.png';
+import prototyping from '../assets/icons/prototyping.png';
+import ux from '../assets/icons/ux.png';
+
+const serviceImages = [frontend, backend, ux, prototyping];
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -17,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => {
           speed: 450,
         }}
         className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+        <img src={serviceImages[index]} alt={title} className="w-16 h-16 object-contain" />
         <h3 className="text-taupe text-[18px] font-bold text-center">
           {title}
         </h3>
@@ -28,6 +34,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   const { t } = useTranslation();
+  const services = t('services', { returnObjects: true });
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
