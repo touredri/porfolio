@@ -138,7 +138,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
+    title: 'Full Stack Developer',
     company_name: 'AREPEL',
     icon: coverhunt,
     iconBg: '#333333',
@@ -152,7 +152,7 @@ const experiences = [
     date: 'Apr 2023 - Sep 2023',
   },
   {
-    title: 'Junior Software Engineer',
+    title: 'Software Engineer',
     company_name: 'Freelancer',
     icon: kelhel,
     iconBg: '#333333',
